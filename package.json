@@ -1,5 +1,6 @@
 {
   "name": "rmsx",
+  "homepage": "http://smithtuka.github.io/rmsx",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "rmsx -d build"
   },
   "eslintConfig": {
     "extends": [
